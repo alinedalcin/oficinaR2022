@@ -1,6 +1,6 @@
 #"File" -> "Reopen with encoding" -> "UTF-8", para a acentuação dos comentários aparecer corretamente
 
-setwd("C:/Users/aline/Dropbox/Documentos/Artigos e etc/Oficinas R/Oficina R") # escolher seu diretório de trabalho 
+setwd("C:/Users/aline/Dropbox/Documentos/Artigos e etc/Oficinas R/Oficina R 2022") # escolher seu diretório de trabalho 
 # Cole o caminho da pasta onde está salvo os arquivos. 
 # A barra \ deve ser substituída por / ou por \\
 
@@ -90,7 +90,7 @@ library(dplyr) #pacote para manusear dados
 
 exemplo_filter1 <- filter(banco_mundial_2019_2020, !is.na(banco_mundial_2019_2020$taxa_de_fertilidade)) 
 exemplo_filter2 <- filter(banco_mundial_2019_2020, taxa_de_fertilidade>=2) 
-exemplo_filter3 <- filter(banco_mundial_2019_2020, taxa_de_fertilidade>=2&continente!="África")
+exemplo_filter3 <- filter(banco_mundial_2019_2020, taxa_de_fertilidade>=2&continente!="Africa")
 # Mais de uma condição: & (para e), | (para ou)
 
 exemplo_mutate <- mutate(banco_mundial_2019_2020, pib_per_capita=pib_dolares_precos_correntes/populacao) 
@@ -118,7 +118,7 @@ exemplo_geral <- banco_mundial_2019_2020 %>%
 
 ### Gráfico 1
 
-install.packages(ggplot2)
+install.packages("ggplot2")
 library(ggplot2) #pacote para gráficos
 
 #banco_mundial_2019_2020 <- fread("banco_mundial_2019_2020.csv")
